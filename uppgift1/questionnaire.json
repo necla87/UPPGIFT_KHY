@@ -1,0 +1,370 @@
+[
+  {
+    "question": "Do you want an active pet?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 1,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 1,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have any allergies?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 3,
+          "dog": 3,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 1,
+          "dog": 1,
+          "rabbit": 1,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you comfortable with handling and grooming?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 3,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 2,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 4
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have enough space for a pet?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 3,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 2,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 4
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have any pet at home?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 3,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 2
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you looking for a pet which needs less care and attention?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 2,
+          "rabbit": 4,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 3,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you looking for a pet that has a longer life?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 3,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 2
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 2,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 4
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have children at home?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 3
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 2
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you prefer a pet with specific intelligence or trainability?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you willing to invest time in training your pet?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you looking for a pet that gets along well with other animals?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 2
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you prefer a pet that is good with strangers or guests?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 2
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Are you looking for a pet that is known for its loyalty?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 2,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 3,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have a preference for a pet's vocalization level?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 1
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  },
+  {
+    "question": "Do you have a specific budget for pet expenses?",
+    "answers": [
+      {
+        "answerText": "Yes",
+        "scores": {
+          "cat": 2,
+          "dog": 4,
+          "rabbit": 3,
+          "fish": 2
+        }
+      },
+      {
+        "answerText": "No",
+        "scores": {
+          "cat": 3,
+          "dog": 2,
+          "rabbit": 2,
+          "fish": 3
+        }
+      }
+    ]
+  }
+]

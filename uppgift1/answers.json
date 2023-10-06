@@ -1,0 +1,73 @@
+[
+  {
+    "name": "necla",
+    "dateTime": "2023-10-06, 14:42:29"
+  },
+  {
+    "question": "Do you want an active pet?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Do you have any allergies?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Are you comfortable with handling and grooming?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Do you have enough space for a pet?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Do you have any pet at home?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Are you looking for a pet which needs less care and attention?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Are you looking for a pet that has a longer life?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Do you have children at home?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Do you prefer a pet with specific intelligence or trainability?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Are you willing to invest time in training your pet?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Are you looking for a pet that gets along well with other animals?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Do you prefer a pet that is good with strangers or guests?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Are you looking for a pet that is known for its loyalty?",
+    "userChoice": "No"
+  },
+  {
+    "question": "Do you have a preference for a pet's vocalization level?",
+    "userChoice": "Yes"
+  },
+  {
+    "question": "Do you have a specific budget for pet expenses?",
+    "userChoice": "Yes"
+  },
+  {
+    "result": "Based on your answers, the pet that best suits you is a dog."
+  }
+]
