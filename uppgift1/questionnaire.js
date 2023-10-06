@@ -117,7 +117,7 @@ for (const pet in percentages) {
 
 currentUserAnswers.percentages = percentages; 
 
-console.log(`Following are the percentages based on your answers:`);
+console.log(`Followings are the percentages based on your answers:`);
 console.log(`Cat: ${percentages.cat}%`);
 console.log(`Dog: ${percentages.dog}%`);
 console.log(`Rabbit: ${percentages.rabbit}%`);
