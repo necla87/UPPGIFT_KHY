@@ -1,7 +1,6 @@
 const fs = require("fs");
 const prompt = require("prompt-sync")();
 
-
 function loadQuestionnaire() {
   const filePath = "./questionnaire.json";
 
@@ -17,28 +16,23 @@ function loadQuestionnaire() {
 function saveUserAnswers(userAnswers) {
   const filePath = "./answers.json";
 
-  try {
-   
-    fs.writeFileSync(filePath, JSON.stringify(userAnswers, null, 2));
+  fs.writeFileSync(filePath, JSON.stringify(userAnswers, null, 2), (error) => {
+    if (error) {
+      console.error("Error saving user answers:", error.message);
+      return;
+    }
+
     console.log("User answers saved successfully to " + filePath);
-  } catch (error) {
-    
-    console.error("Error saving user answers:", error.message);
-  }
+  });
 }
-
-
 
 const userName = prompt("What is your name? ");
 console.log(`Hello, ${userName}! Let's determine which pet suits you best.`);
 
-
 const currentDate = new Date();
 const dateTime = currentDate.toLocaleString();
 
-
 const questionnaire = loadQuestionnaire();
-
 
 const scores = {
   cat: 0,
@@ -47,7 +41,6 @@ const scores = {
   fish: 0,
 };
 
-
 const userAnswers = [
   {
     name: userName,
@@ -55,32 +48,41 @@ const userAnswers = [
   },
 ];
 
-questionnaire.forEach((questionObj, index) => {
-  console.log(`Question ${index + 1}: ${questionObj.question}`);
-  console.log("Choose an answer:");
+for (let questionNumber = 0; questionNumber < questionnaire.length; questionNumber++) {
+  const questionObj = questionnaire[questionNumber];
+  console.log(`Question ${questionNumber + 1}: ${questionObj.question}`);
+  console.log("Choose an answer (1 or 2):");
 
-  questionObj.answers.forEach((answer, answerIndex) => {
-    console.log(`${answerIndex + 1}. ${answer.answerText}`);
-  });
+  for (let answerNumber = 0; answerNumber < questionObj.answers.length; answerNumber++) {
+    const answer = questionObj.answers[answerNumber];
+    console.log(`${answerNumber + 1}. ${answer.answerText}`);
+  }
 
-  const userChoice = prompt("Enter the number of your choice: ");
-  const chosenAnswer = questionObj.answers[parseInt(userChoice) - 1];
+  let userChoice;
+  let chosenAnswer;
 
- 
+  while (true) {
+    userChoice = prompt("Enter the number of your choice: ");
+    chosenAnswer = questionObj.answers[parseInt(userChoice) - 1];
+
+    if (userChoice === "1" || userChoice === "2") {
+      break;
+    } else {
+      console.warn("An incorrect answer. Please use only 1 or 2.");
+    }
+  }
+
   for (const pet in chosenAnswer.scores) {
     scores[pet] += chosenAnswer.scores[pet];
   }
-
 
   userAnswers.push({
     question: questionObj.question,
     userChoice: chosenAnswer.answerText,
   });
-});
-
+}
 
 const totalScore = scores.cat + scores.dog + scores.rabbit + scores.fish;
-
 
 const percentages = {
   cat: ((scores.cat / totalScore) * 100).toFixed(2),
@@ -96,18 +98,16 @@ for (const pet in percentages) {
   }
 }
 
-console.log(`Based on your answers, here are the suitability percentages for each pet:`);
+console.log(`Following are the percentages based on your answers:`);
 console.log(`Cat: ${percentages.cat}%`);
 console.log(`Dog: ${percentages.dog}%`);
 console.log(`Rabbit: ${percentages.rabbit}%`);
 console.log(`Fish: ${percentages.fish}%`);
 
-console.log(`\nThe pet that best suits you is a ${bestPet}.`);
-
+console.log(`\nYour ideal pet is a ${bestPet}.`);
 
 userAnswers.push({
-  result: `Based on your answers, the pet that best suits you is a ${bestPet}.`,
+  result: `Your answers suggest a ${bestPet} pet is best suited for your lifestyle.`,
 });
 
 saveUserAnswers(userAnswers);
-

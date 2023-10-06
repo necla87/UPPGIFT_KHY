@@ -1,7 +1,7 @@
 [
   {
     "name": "necla",
-    "dateTime": "2023-10-06, 14:42:29"
+    "dateTime": "2023-10-06, 16:17:52"
   },
   {
     "question": "Do you want an active pet?",
@@ -25,15 +25,15 @@
   },
   {
     "question": "Are you looking for a pet which needs less care and attention?",
-    "userChoice": "No"
+    "userChoice": "Yes"
   },
   {
     "question": "Are you looking for a pet that has a longer life?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
     "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
     "question": "Do you have children at home?",
@@ -45,7 +45,7 @@
   },
   {
     "question": "Are you willing to invest time in training your pet?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
     "question": "Are you looking for a pet that gets along well with other animals?",
@@ -53,7 +53,7 @@
   },
   {
     "question": "Do you prefer a pet that is good with strangers or guests?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
     "question": "Are you looking for a pet that is known for its loyalty?",
@@ -61,13 +61,13 @@
   },
   {
     "question": "Do you have a preference for a pet's vocalization level?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
     "question": "Do you have a specific budget for pet expenses?",
-    "userChoice": "Yes"
+    "userChoice": "No"
   },
   {
-    "result": "Based on your answers, the pet that best suits you is a dog."
+    "result": "Your answers suggest a fish pet is best suited for your lifestyle."
   }
 ]
