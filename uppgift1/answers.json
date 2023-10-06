@@ -1,73 +1,156 @@
 [
   {
-    "name": "necla",
-    "dateTime": "2023-10-06, 16:17:52"
+    "name": "Linus",
+    "dateTime": "2023-10-06, 22:50:58",
+    "answers": [
+      {
+        "question": "Do you want an active pet?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have any allergies?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Are you comfortable with handling and grooming?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have enough space for a pet?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you have any pet at home?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet which needs less care and attention?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Are you looking for a pet that has a longer life?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have children at home?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you prefer a pet with specific intelligence or trainability?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Are you willing to invest time in training your pet?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet that gets along well with other animals?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you prefer a pet that is good with strangers or guests?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet that is known for its loyalty?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have a preference for a pet's vocalization level?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you have a specific budget for pet expenses?",
+        "answer": "Yes"
+      }
+    ],
+    "percentages": {
+      "cat": "24.07",
+      "dog": "27.78",
+      "rabbit": "24.69",
+      "fish": "23.46"
+    },
+    "result": "Your answers suggest a dog pet is best suited for your lifestyle."
   },
   {
-    "question": "Do you want an active pet?",
-    "userChoice": "Yes"
-  },
-  {
-    "question": "Do you have any allergies?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Are you comfortable with handling and grooming?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have enough space for a pet?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have any pet at home?",
-    "userChoice": "Yes"
-  },
-  {
-    "question": "Are you looking for a pet which needs less care and attention?",
-    "userChoice": "Yes"
-  },
-  {
-    "question": "Are you looking for a pet that has a longer life?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have children at home?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you prefer a pet with specific intelligence or trainability?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Are you willing to invest time in training your pet?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Are you looking for a pet that gets along well with other animals?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you prefer a pet that is good with strangers or guests?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Are you looking for a pet that is known for its loyalty?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have a preference for a pet's vocalization level?",
-    "userChoice": "No"
-  },
-  {
-    "question": "Do you have a specific budget for pet expenses?",
-    "userChoice": "No"
-  },
-  {
+    "name": "mattias",
+    "dateTime": "2023-10-06, 22:51:36",
+    "answers": [
+      {
+        "question": "Do you want an active pet?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have any allergies?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Are you comfortable with handling and grooming?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you have enough space for a pet?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have any pet at home?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet which needs less care and attention?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet that has a longer life?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have a preference for a pet's coat length or type (e.g., short-haired, long-haired, hypoallergenic)?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have children at home?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you prefer a pet with specific intelligence or trainability?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you willing to invest time in training your pet?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet that gets along well with other animals?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you prefer a pet that is good with strangers or guests?",
+        "answer": "No"
+      },
+      {
+        "question": "Are you looking for a pet that is known for its loyalty?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have a preference for a pet's vocalization level?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you have a specific budget for pet expenses?",
+        "answer": "Yes"
+      }
+    ],
+    "percentages": {
+      "cat": "25.30",
+      "dog": "25.30",
+      "rabbit": "22.89",
+      "fish": "26.51"
+    },
     "result": "Your answers suggest a fish pet is best suited for your lifestyle."
   }
 ]

@@ -13,6 +13,18 @@ function loadQuestionnaire() {
   }
 }
 
+function loadUserAnswers() {
+  const filePath = "./answers.json";
+
+  if (fs.existsSync(filePath)) {
+    const data = fs.readFileSync(filePath);
+    return JSON.parse(data);
+  } else {
+    console.error("Error: Answers file not found.");
+    return [];
+  }
+}
+
 function saveUserAnswers(userAnswers) {
   const filePath = "./answers.json";
 
@@ -26,6 +38,8 @@ function saveUserAnswers(userAnswers) {
   });
 }
 
+console.log("Welcome to the Pet Questionnaire!");
+
 const userName = prompt("What is your name? ");
 console.log(`Hello, ${userName}! Let's determine which pet suits you best.`);
 
@@ -33,6 +47,7 @@ const currentDate = new Date();
 const dateTime = currentDate.toLocaleString();
 
 const questionnaire = loadQuestionnaire();
+const userAnswers = loadUserAnswers();
 
 const scores = {
   cat: 0,
@@ -41,12 +56,15 @@ const scores = {
   fish: 0,
 };
 
-const userAnswers = [
-  {
-    name: userName,
-    dateTime: dateTime,
-  },
-];
+const currentUserAnswers = {
+  name: userName,
+  dateTime: dateTime,
+  answers: [],
+  percentages: {}, // Initialize percentages object
+  result: "", // Initialize result
+};
+
+let bestPet = "cat"; // Initialize bestPet variable here
 
 for (let questionNumber = 0; questionNumber < questionnaire.length; questionNumber++) {
   const questionObj = questionnaire[questionNumber];
@@ -76,9 +94,9 @@ for (let questionNumber = 0; questionNumber < questionnaire.length; questionNumb
     scores[pet] += chosenAnswer.scores[pet];
   }
 
-  userAnswers.push({
+  currentUserAnswers.answers.push({
     question: questionObj.question,
-    userChoice: chosenAnswer.answerText,
+    answer: chosenAnswer.answerText,
   });
 }
 
@@ -91,12 +109,13 @@ const percentages = {
   fish: ((scores.fish / totalScore) * 100).toFixed(2),
 };
 
-let bestPet = "cat";
 for (const pet in percentages) {
   if (percentages[pet] > percentages[bestPet]) {
     bestPet = pet;
   }
 }
+
+currentUserAnswers.percentages = percentages; // Add percentages to the object
 
 console.log(`Following are the percentages based on your answers:`);
 console.log(`Cat: ${percentages.cat}%`);
@@ -106,8 +125,7 @@ console.log(`Fish: ${percentages.fish}%`);
 
 console.log(`\nYour ideal pet is a ${bestPet}.`);
 
-userAnswers.push({
-  result: `Your answers suggest a ${bestPet} pet is best suited for your lifestyle.`,
-});
+currentUserAnswers.result = `Your answers suggest a ${bestPet} pet is best suited for your lifestyle.`;
 
+userAnswers.push(currentUserAnswers);
 saveUserAnswers(userAnswers);
