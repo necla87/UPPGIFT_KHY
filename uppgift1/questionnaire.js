@@ -60,11 +60,11 @@ const currentUserAnswers = {
   name: userName,
   dateTime: dateTime,
   answers: [],
-  percentages: {}, // Initialize percentages object
-  result: "", // Initialize result
+  percentages: {}, 
+  result: "", 
 };
 
-let bestPet = "cat"; // Initialize bestPet variable here
+let bestPet = "cat"; 
 
 for (let questionNumber = 0; questionNumber < questionnaire.length; questionNumber++) {
   const questionObj = questionnaire[questionNumber];
@@ -115,7 +115,7 @@ for (const pet in percentages) {
   }
 }
 
-currentUserAnswers.percentages = percentages; // Add percentages to the object
+currentUserAnswers.percentages = percentages; 
 
 console.log(`Following are the percentages based on your answers:`);
 console.log(`Cat: ${percentages.cat}%`);
