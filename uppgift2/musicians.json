@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ajda Pekkan",
+    "info": "Turkish pop artist",
+    "birthYear": 1946,
+    "bands": [
+      {
+        "band": "The Club Cats",
+        "yearJoined": 1961,
+        "instrumentsPlayed": [
+          "Vocal"
+        ]
+      }
+    ],
+    "previousBands": [],
+    "instruments": [
+      "Vocal"
+    ]
+  },
+  {
+    "name": "Ceza",
+    "info": "Turkish rapper",
+    "birthYear": 1977,
+    "bands": [
+      {
+        "band": "Sinek Sekiz",
+        "yearJoined": 1999,
+        "instrumentsPlayed": [
+          "Rap"
+        ]
+      }
+    ],
+    "previousBands": [],
+    "instruments": [
+      "Rap"
+    ]
+  }
+]

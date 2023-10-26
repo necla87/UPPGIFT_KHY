@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Duman",
+    "info": "Turkish alternative rock band",
+    "formedYear": 1999,
+    "dissolvedYear": null,
+    "members": [
+      {
+        "musician": "Kağan Yıldız",
+        "yearJoined": 1999,
+        "instrumentsPlayed": [
+          "Vocal",
+          "Bass"
+        ]
+      }
+    ],
+    "previousMembers": []
+  },
+  {
+    "name": "Grizu",
+    "info": "Turkish hip-hop and electronic music project",
+    "formedYear": 2017,
+    "dissolvedYear": null,
+    "members": [
+      {
+        "musician": "Gökalp Kanatsız",
+        "yearJoined": 2017,
+        "instrumentsPlayed": [
+          "Electronic"
+        ]
+      }
+    ],
+    "previousMembers": []
+  }
+]
