@@ -1,0 +1,54 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game-history-container {
+  margin-top: 20px;
+}
+
+.player-history {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #222;
+}
+
+.player-history h2 {
+  margin-bottom: 10px;
+}
+
+.player-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.player-history li {
+  margin-bottom: 5px;
+}

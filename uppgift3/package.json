@@ -1,0 +1,12 @@
+{
+  "name": "uppgift3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.7.1.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

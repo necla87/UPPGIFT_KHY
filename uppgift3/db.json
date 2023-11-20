@@ -1,0 +1,59 @@
+{
+  "players": [
+    {
+      "name": "ove",
+      "id": 3,
+      "gameHistory": [],
+      "score": 1
+    },
+    {
+      "name": "henrik",
+      "id": 4,
+      "gameHistory": [],
+      "score": 3
+    },
+    {
+      "name": "ali",
+      "id": 5,
+      "gameHistory": [],
+      "score": 2
+    },
+    {
+      "name": "heidi",
+      "id": 6,
+      "gameHistory": [
+        "John wins"
+      ],
+      "score": 1
+    },
+    {
+      "name": "Esra",
+      "id": 7,
+      "gameHistory": [],
+      "score": 2
+    },
+    {
+      "name": "Mark",
+      "id": 8,
+      "score": null
+    },
+    {
+      "name": "John",
+      "id": 9
+    },
+    {
+      "name": "hello",
+      "id": 10,
+      "score": null
+    },
+    {
+      "name": "max",
+      "id": 11,
+      "score": null
+    },
+    {
+      "name": "Chloe",
+      "id": 12
+    }
+  ]
+}
