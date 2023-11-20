@@ -106,12 +106,10 @@ $(document).ready(function () {
   }
 
   function getCurrentPlayerName() {
-    var currentPlayerName =
-      currentPlayer === playerX
-        ? $('#player-dropdown-1 option:selected').text()
-        : $('#player-dropdown-2 option:selected').text();
+    var currentPlayerName = (currentPlayer === playerX) ? $('#player-dropdown-1 option:selected').text() : $('#player-dropdown-2 option:selected').text();
     return currentPlayerName;
   }
+
 
   function getCurrentPlayerSymbol() {
     return currentPlayer === playerX ? 'X' : 'O';
@@ -121,10 +119,20 @@ $(document).ready(function () {
     var selectedPlayer1 = $('#player-dropdown-1').val();
     var selectedPlayer2 = $('#player-dropdown-2').val();
 
-    currentPlayer = currentPlayer === selectedPlayer1 ? selectedPlayer2 : selectedPlayer1;
+    currentPlayer = (currentPlayer === selectedPlayer1) ? selectedPlayer2 : selectedPlayer1;
 
-    updateGameStatus();
+    if (checkForWin()) {
+      endGame('win');
+    } else if (checkForDraw()) {
+      endGame('draw');
+    } else {
+      renderGameBoard();
+
+      updateGameStatus();
+    }
   }
+
+
 
   function updateGameStatus() {
     $('#game-status').text('Current Player: ' + getCurrentPlayerName());
@@ -182,27 +190,27 @@ $(document).ready(function () {
     var gameResult = result === 'draw' ? 'Draw' : currentPlayerName + ' wins';
 
     if (result === 'win') {
-      showAlert(currentPlayerName + ' wins!');
+      showAlert(gameResult);
       updateScore(currentPlayer);
-
-      setTimeout(function () {
-        $('#alert').hide();
-      }, 5000);
+    } else {
+      showAlert(gameResult);
     }
 
-    if (checkForWin()) {
-      $.ajax({
-        url: 'http://localhost:3000/players/' + currentPlayer,
-        method: 'GET',
-        success: function (player) {
-          player.gameHistory.push(gameResult);
-          updateGameHistory(player);
-        },
-        error: function (error) {
-          console.log('Error updating game history:', error);
-        }
-      });
-    }
+    $.ajax({
+      url: 'http://localhost:3000/players/' + currentPlayer,
+      method: 'GET',
+      success: function (player) {
+        player.gameHistory.push(gameResult);
+        updateGameHistory(player);
+      },
+      error: function (error) {
+        console.log('Error updating game history:', error);
+      }
+    });
+
+    setTimeout(function () {
+      resetGame();
+    }, 5000); 
   }
 
 

@@ -21,10 +21,21 @@ function displayGameHistory(players) {
   gameHistoryContainer.empty();
 
   players.forEach(function (player) {
+    if (!player) {
+      console.log('Player object is undefined or null.');
+      return;
+    }
+
     var playerHistory = $('<div class="player-history"></div>');
+
+    if (!player.name) {
+      console.log('Player name is missing.');
+      return;
+    }
+
     playerHistory.append('<h2>' + player.name + '</h2>');
 
-    if (player.gameHistory.length === 0) {
+    if (!player.gameHistory || player.gameHistory.length === 0) {
       playerHistory.append('<p>No game history available.</p>');
     } else {
       var historyList = $('<ul></ul>');

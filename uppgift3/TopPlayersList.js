@@ -27,8 +27,11 @@ function displayTopPlayers(players) {
     topPlayersContainer.append('<p>No top players available.</p>');
   } else {
     var topPlayersList = $('<ul></ul>');
-    players.forEach(function (player, index) {
-      topPlayersList.append('<li>' + (index + 1) + '. ' + player.name + ' - Score: ' + player.score + '</li>');
+    players.forEach(function (player) {
+      var playerName = player.name || 'Unknown Player';
+      var playerScore = player.score !== undefined && player.score !== null ? player.score : 0;
+
+      topPlayersList.append('<li>' + playerName + ' - Score: ' + playerScore + '</li>');
     });
     topPlayersContainer.append(topPlayersList);
   }

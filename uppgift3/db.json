@@ -3,20 +3,24 @@
     {
       "name": "ove",
       "id": 3,
-      "gameHistory": [],
-      "score": 1
+      "gameHistory": [
+        "ove wins"
+      ],
+      "score": 2
     },
     {
       "name": "henrik",
       "id": 4,
       "gameHistory": [],
-      "score": 3
+      "score": 4
     },
     {
       "name": "ali",
       "id": 5,
-      "gameHistory": [],
-      "score": 2
+      "gameHistory": [
+        "ali wins"
+      ],
+      "score": 3
     },
     {
       "name": "heidi",
@@ -44,7 +48,7 @@
     {
       "name": "hello",
       "id": 10,
-      "score": null
+      "score": 1
     },
     {
       "name": "max",
@@ -53,7 +57,8 @@
     },
     {
       "name": "Chloe",
-      "id": 12
+      "id": 12,
+      "score": null
     }
   ]
 }
