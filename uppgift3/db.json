@@ -59,6 +59,34 @@
       "name": "Chloe",
       "id": 12,
       "score": null
+    },
+    {
+      "name": "Necla",
+      "gameHistory": [
+        "Necla wins"
+      ],
+      "score": 0,
+      "id": 13
+    },
+    {
+      "name": "Tony",
+      "gameHistory": [],
+      "score": 0,
+      "id": 14
+    },
+    {
+      "name": "Sally",
+      "gameHistory": [],
+      "score": 0,
+      "id": 15
+    },
+    {
+      "name": "Natalie",
+      "gameHistory": [
+        "Natalie wins"
+      ],
+      "score": 0,
+      "id": 16
     }
   ]
 }
