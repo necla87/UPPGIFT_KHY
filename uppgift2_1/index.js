@@ -11,7 +11,7 @@ function userID() {
 }
 
 function createNewAccount() {
-  const id = generateSequentialUserId();
+  const id = userID();
   const username = prompt('Enter a username: ');
   const password = prompt('Enter a password: ', { echo: '*' });
   const email = prompt('Enter an email: ');
