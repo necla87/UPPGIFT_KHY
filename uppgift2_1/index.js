@@ -13,7 +13,7 @@ function userID() {
 function createNewAccount() {
   const id = userID();
   const username = prompt('Enter a username: ');
-  const password = prompt('Enter a password: ', { echo: '*' });
+  const password = prompt('Enter a password: '); 
   const email = prompt('Enter an email: ');
   const phone = prompt('Enter a phone number: ');
 
