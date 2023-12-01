@@ -1,66 +1,74 @@
 [
   {
-    "id": 1,
+    "id": "user_1",
     "username": "Sami",
     "password": "dnvkdnf",
     "email": "exam@email.com",
     "phone": "123456789",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 2,
+    "id": "user_2",
     "username": "Ahmet",
     "password": "kdlvjaivf",
     "email": "ahmet@yahaa.com",
     "phone": "555-1234",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 3,
+    "id": "user_3",
     "username": "Merve",
     "password": "adnvonadv",
     "email": "merve@gmaid.com",
     "phone": "555-5678",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 4,
+    "id": "user_4",
     "username": "Özgur",
     "password": "pfvoakdvu",
     "email": "ozgur@mymy.com",
     "phone": "555-9101",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 5,
+    "id": "user_5",
     "username": "Ayşe",
     "password": "fdhsgd",
     "email": "ayse@email.com",
     "phone": "555-1122",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 6,
+    "id": "user_6",
     "username": "Mustafa",
     "password": "oiweur",
     "email": "mustafa@yahaa.com",
     "phone": "555-3344",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 7,
+    "id": "user_7",
     "username": "Zeynep",
     "password": "sdfgfd",
     "email": "zeynep@gmaid.com",
     "phone": "555-5566",
+    "isAdmin": false,
     "eventTickets": []
   },
   {
-    "id": 8,
+    "id": "user_8",
     "username": "Ali",
     "password": "dfgdfg",
     "email": "ali@mymy.com",
     "phone": "555-7788",
+    "isAdmin": false,
     "eventTickets": []
   }
 ]
