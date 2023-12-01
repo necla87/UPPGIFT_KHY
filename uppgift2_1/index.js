@@ -103,13 +103,22 @@ createNewAccount(2, 'Ahmet', 'kdlvjaivf', 'ahmet@yahaa.com', '555-1234');
 createNewAccount(3, 'Merve', 'adnvonadv', 'merve@gmaid.com', '555-5678');
 createNewAccount(4, 'Özgur', 'pfvoakdvu', 'ozgur@mymy.com', '555-9101');
 
-
-// Example: Add event tickets with shorter event time representations
 addEventTicket('Rock Concert', 50, '12/01/2023 19:00', 'Sami');
 addEventTicket('Classical Music Night', 75, '12/10/2023 20:30', 'Ahmet');
 addEventTicket('Comedy Show', 40, '12/05/2023 18:00', 'Merve');
 
 
+viewUsersByEvent();
 
-// View users for the added event
+createNewAccount(5, 'Ayşe', 'fdhsgd', 'ayse@email.com', '555-1122');
+createNewAccount(6, 'Mustafa', 'oiweur', 'mustafa@yahaa.com', '555-3344');
+createNewAccount(7, 'Zeynep', 'sdfgfd', 'zeynep@gmaid.com', '555-5566');
+createNewAccount(8, 'Ali', 'dfgdfg', 'ali@mymy.com', '555-7788');
+
+login('Ayşe', 'fdhsgd');
+
+addEventTicket('Pop Music Festival', 60, '12/15/2023 21:30', 'Mustafa');
+addEventTicket('Magic Show', 45, '12/08/2023 17:30', 'Zeynep');
+addEventTicket('Sports Gala', 30, '12/20/2023 18:45', 'Ali');
+
 viewUsersByEvent();

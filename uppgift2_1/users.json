@@ -30,5 +30,37 @@
     "email": "ozgur@mymy.com",
     "phone": "555-9101",
     "eventTickets": []
+  },
+  {
+    "id": 5,
+    "username": "Ayşe",
+    "password": "fdhsgd",
+    "email": "ayse@email.com",
+    "phone": "555-1122",
+    "eventTickets": []
+  },
+  {
+    "id": 6,
+    "username": "Mustafa",
+    "password": "oiweur",
+    "email": "mustafa@yahaa.com",
+    "phone": "555-3344",
+    "eventTickets": []
+  },
+  {
+    "id": 7,
+    "username": "Zeynep",
+    "password": "sdfgfd",
+    "email": "zeynep@gmaid.com",
+    "phone": "555-5566",
+    "eventTickets": []
+  },
+  {
+    "id": 8,
+    "username": "Ali",
+    "password": "dfgdfg",
+    "email": "ali@mymy.com",
+    "phone": "555-7788",
+    "eventTickets": []
   }
 ]
