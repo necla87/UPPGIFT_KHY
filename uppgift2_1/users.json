@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "username": "Sami",
+    "password": "dnvkdnf",
+    "email": "exam@email.com",
+    "phone": "123456789",
+    "eventTickets": []
+  },
+  {
+    "id": 2,
+    "username": "Ahmet",
+    "password": "kdlvjaivf",
+    "email": "ahmet@yahaa.com",
+    "phone": "555-1234",
+    "eventTickets": []
+  },
+  {
+    "id": 3,
+    "username": "Merve",
+    "password": "adnvonadv",
+    "email": "merve@gmaid.com",
+    "phone": "555-5678",
+    "eventTickets": []
+  },
+  {
+    "id": 4,
+    "username": "Özgur",
+    "password": "pfvoakdvu",
+    "email": "ozgur@mymy.com",
+    "phone": "555-9101",
+    "eventTickets": []
+  }
+]
