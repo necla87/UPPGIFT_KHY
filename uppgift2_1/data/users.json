@@ -1,2 +1,31 @@
 [
+  {
+    "id": "lpqsqdiqq0gww1eazan",
+    "username": "david",
+    "password": "54321",
+    "email": "david@ggmail.com",
+    "phone": "0987654",
+    "eventTickets": [
+      {
+        "id": "lpqwv55wmwn6gzmfde",
+        "eventName": "Concert",
+        "price": 50,
+        "time": "2023-12-25T00:00:00.000Z"
+      },
+      {
+        "id": "lpqx0npnv0ffzpyfynn",
+        "price": 35,
+        "time": "2024-06-14T22:00:00.000Z",
+        "buyerId": "lpqsqdiqq0gww1eazan"
+      }
+    ]
+  },
+  {
+    "id": "lpqy81q2sm968rcy5gs",
+    "username": "heidi",
+    "password": "345678",
+    "email": "heidi@ggmail.com",
+    "phone": "385756",
+    "eventTickets": []
+  }
 ]
