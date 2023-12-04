@@ -73,7 +73,14 @@
     "password": "tom123",
     "email": "tom@ggmail.com",
     "phone": "3287545634",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 1,
+        "name": "Northern Lights Trip",
+        "price": 5000,
+        "time": "2024-08-02T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "7",

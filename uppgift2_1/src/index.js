@@ -159,13 +159,12 @@ function adminMenu(adminUser) {
         adminUser.viewPurchasedUsers(users);
         break;
       case '3':
-        return; 
+        return;
       default:
         console.log('Invalid choice. Please enter a valid option.');
     }
   }
 }
-
 
 function loadEntities(EntityClass, filePath) {
   try {
@@ -210,10 +209,10 @@ function buyEventTicket(currentUser) {
   if (selectedEvent) {
     selectedEvent.buyerId = currentUser.id;
 
-   saveEntities(allEvents, eventTicketsFilePath);
+    saveEntities(allEvents, eventTicketsFilePath);
 
     const updatedUsers = users.map(user => {
-      if (user.id === currentUser.id) { 
+      if (user.id === currentUser.id) {
         user.eventTickets.push({
           id: selectedEvent.id,
           name: selectedEvent.name,
@@ -232,19 +231,16 @@ function buyEventTicket(currentUser) {
   }
 }
 
-
 function createEvent() {
   console.log('\nCreate a New Event:');
   const eventName = promptSync('Enter event name: ');
   const eventPrice = parseFloat(promptSync('Enter event price: '));
   const eventTime = promptSync('Enter event time (YYYY-MM-DDTHH:mm:ss): ');
 
-  const newEvent = new EventTicket(generateEventId(), eventName, eventPrice, new Date(eventTime).toISOString());
+  const newEvent = new EventTicket(eventIdCounter++, eventName, eventPrice, new Date(eventTime).toISOString());
   eventTickets.push(newEvent);
 
   saveEntities(eventTickets, eventTicketsFilePath);
 
   console.log(`Event "${eventName}" added successfully!`);
 }
-
-
