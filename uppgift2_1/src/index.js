@@ -156,15 +156,16 @@ function adminMenu(adminUser) {
         createEvent();
         break;
       case '2':
-        viewPurchasedUsers();
+        adminUser.viewPurchasedUsers(users);
         break;
       case '3':
-        return;
+        return; 
       default:
         console.log('Invalid choice. Please enter a valid option.');
     }
   }
 }
+
 
 function loadEntities(EntityClass, filePath) {
   try {
@@ -200,27 +201,19 @@ function buyEventTicket(currentUser) {
 
   console.log('Available Events:');
   allEvents.forEach((event, index) => {
-    const buyers = event.buyerIds.length;
-    console.log(`${index + 1}. ${event.name} - ${event.price} SEK - ${event.time} (${buyers} buyer(s))`);
+    console.log(`${index + 1}. ${event.name} - ${event.price} SEK - ${event.time}`);
   });
 
   const eventIndex = promptSync('Enter the number of the event you want to attend: ');
 
   const selectedEvent = allEvents[eventIndex - 1];
   if (selectedEvent) {
-    selectedEvent.buyerIds.push(currentUser.id);
+    selectedEvent.buyerId = currentUser.id;
 
-    currentUser.eventTickets.push({
-      id: selectedEvent.id,
-      name: selectedEvent.name,
-      price: selectedEvent.price,
-      time: selectedEvent.time,
-    });
-
-    saveEntities(allEvents, eventTicketsFilePath);
+   saveEntities(allEvents, eventTicketsFilePath);
 
     const updatedUsers = users.map(user => {
-      if (user.id === currentUser.id) {
+      if (user.id === currentUser.id) { 
         user.eventTickets.push({
           id: selectedEvent.id,
           name: selectedEvent.name,
@@ -239,6 +232,7 @@ function buyEventTicket(currentUser) {
   }
 }
 
+
 function createEvent() {
   console.log('\nCreate a New Event:');
   const eventName = promptSync('Enter event name: ');
@@ -253,12 +247,4 @@ function createEvent() {
   console.log(`Event "${eventName}" added successfully!`);
 }
 
-function viewPurchasedUsers() {
-  console.log('\nUsers who purchased tickets:');
-  eventTickets.forEach((event) => {
-    if (event.buyerId) {
-      const user = users.find(user => user.id === event.buyerId);
-      console.log(`${user.username} - ${event.name}`);
-    }
-  });
-}
+

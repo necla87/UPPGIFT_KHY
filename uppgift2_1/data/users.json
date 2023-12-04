@@ -5,7 +5,14 @@
     "password": "sam123",
     "email": "sam@ggmail.com",
     "phone": "4835398",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 4,
+        "name": "Movie Night",
+        "price": 300,
+        "time": "2024-02-03T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "2",
@@ -13,7 +20,14 @@
     "password": "han123",
     "email": "han@ggmail.com",
     "phone": "298753465",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 6,
+        "name": "Tech Conference",
+        "price": 350,
+        "time": "2024-01-26T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "3",
@@ -21,7 +35,14 @@
     "password": "bill123",
     "email": "han@ggmail.com",
     "phone": "23753456",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 2,
+        "name": "Rock Concert",
+        "price": 300,
+        "time": "2024-10-09T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "4",
@@ -37,7 +58,14 @@
     "password": "mary123",
     "email": "mary@ggmail.com",
     "phone": "23897534",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 2,
+        "name": "Rock Concert",
+        "price": 300,
+        "time": "2024-10-09T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "6",
@@ -53,7 +81,14 @@
     "password": "laila123",
     "email": "laila@ggmail.com",
     "phone": "3298573945",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 3,
+        "name": "Art Exhibition",
+        "price": 450,
+        "time": "2024-05-05T00:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "8",
@@ -61,6 +96,13 @@
     "password": "david123",
     "email": "david@gmail.com",
     "phone": "32953485",
-    "eventTickets": []
+    "eventTickets": [
+      {
+        "id": 7,
+        "name": "Comedy Show",
+        "price": 400,
+        "time": "2024-05-09T00:00:00.000Z"
+      }
+    ]
   }
 ]

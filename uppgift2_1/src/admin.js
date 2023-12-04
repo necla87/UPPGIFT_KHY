@@ -1,5 +1,3 @@
-// Inside Admin.js
-
 export default class Admin {
   constructor(username, password) {
     this.username = username;
@@ -17,14 +15,14 @@ export default class Admin {
     };
   }
 
-  viewPurchasedUsers(eventTickets) {
+  viewPurchasedUsers(users) {
     console.log('\nUsers who purchased tickets:');
-
-    // Iterate over eventTickets and find users who purchased tickets
-    eventTickets.forEach(event => {
-      const user = users.find(user => user.id === event.buyerId);
-      if (user) {
-        console.log(`${user.username} - ${event.name}`);
+    users.forEach(user => {
+      if (user.eventTickets.length > 0) {
+        console.log(`\n${user.username}'s purchased tickets:`);
+        user.eventTickets.forEach(ticket => {
+          console.log(`- Event: ${ticket.name}, Price: ${ticket.price} SEK, Time: ${ticket.time}`);
+        });
       }
     });
   }

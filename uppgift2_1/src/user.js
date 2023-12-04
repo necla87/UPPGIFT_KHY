@@ -1,5 +1,3 @@
-// Inside User.js
-
 export default class User {
   constructor(id, username, password, email, phone, eventTickets) {
     this.id = id;
