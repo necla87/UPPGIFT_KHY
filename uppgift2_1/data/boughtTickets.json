@@ -1,0 +1,51 @@
+[
+  {
+    "eventId": 1,
+    "eventName": "Northern Lights Trip",
+    "price": 5000,
+    "time": "2024-08-02T00:00:00.000Z",
+    "buyerId": "7"
+  },
+  {
+    "eventId": 6,
+    "eventName": "Tech Conference",
+    "price": 350,
+    "time": "2024-01-26T00:00:00.000Z",
+    "buyerId": "1"
+  },
+  {
+    "eventId": 4,
+    "eventName": "Movie Night",
+    "price": 300,
+    "time": "2024-02-03T00:00:00.000Z",
+    "buyerId": "1"
+  },
+  {
+    "eventId": 7,
+    "eventName": "Comedy Show",
+    "price": 400,
+    "time": "2024-05-09T00:00:00.000Z",
+    "buyerId": "1"
+  },
+  {
+    "eventId": 2,
+    "eventName": "Rock Concert",
+    "price": 300,
+    "time": "2024-10-09T00:00:00.000Z",
+    "buyerId": "4"
+  },
+  {
+    "eventId": 5,
+    "eventName": "New year party",
+    "price": 500,
+    "time": "2023-12-30T00:00:00.000Z",
+    "buyerId": "6"
+  },
+  {
+    "eventId": 3,
+    "eventName": "Art Exhibition",
+    "price": 450,
+    "time": "2024-05-05T00:00:00.000Z",
+    "buyerId": "6"
+  }
+]

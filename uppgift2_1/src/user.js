@@ -1,24 +1,24 @@
 // Inside User.js
 
 export default class User {
-  constructor(id, username, password, email, phone) {
+  constructor(id, username, password, email, phone, eventTickets) {
     this.id = id;
     this.username = username;
     this.password = password;
     this.email = email;
     this.phone = phone;
-    this.eventTickets = [];
-  }
-
-  buyEventTicket(eventTicket) {
-    this.eventTickets.push(eventTicket);
-    eventTicket.buyerId = this.id;
+    this.eventTickets = eventTickets || [];
   }
 
   static fromJSON(json) {
-    const user = new User(json.id, json.username, json.password, json.email, json.phone);
-    user.eventTickets = json.eventTickets || [];
-    return user;
+    return new User(
+      json.id,
+      json.username,
+      json.password,
+      json.email,
+      json.phone,
+      json.eventTickets
+    );
   }
 
   toJSON() {
@@ -28,8 +28,11 @@ export default class User {
       password: this.password,
       email: this.email,
       phone: this.phone,
-      eventTickets: this.eventTickets,
+      eventTickets: this.eventTickets
     };
   }
-}
 
+  buyEventTicket(eventId) {
+    this.eventTickets.push(eventId);
+  }
+}

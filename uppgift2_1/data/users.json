@@ -1,31 +1,66 @@
 [
   {
-    "id": "lpqsqdiqq0gww1eazan",
-    "username": "david",
-    "password": "54321",
-    "email": "david@ggmail.com",
-    "phone": "0987654",
-    "eventTickets": [
-      {
-        "id": "lpqwv55wmwn6gzmfde",
-        "eventName": "Concert",
-        "price": 50,
-        "time": "2023-12-25T00:00:00.000Z"
-      },
-      {
-        "id": "lpqx0npnv0ffzpyfynn",
-        "price": 35,
-        "time": "2024-06-14T22:00:00.000Z",
-        "buyerId": "lpqsqdiqq0gww1eazan"
-      }
-    ]
+    "id": "1",
+    "username": "sam",
+    "password": "sam123",
+    "email": "sam@ggmail.com",
+    "phone": "4835398",
+    "eventTickets": []
   },
   {
-    "id": "lpqy81q2sm968rcy5gs",
-    "username": "heidi",
-    "password": "345678",
-    "email": "heidi@ggmail.com",
-    "phone": "385756",
+    "id": "2",
+    "username": "han",
+    "password": "han123",
+    "email": "han@ggmail.com",
+    "phone": "298753465",
+    "eventTickets": []
+  },
+  {
+    "id": "3",
+    "username": "bill",
+    "password": "bill123",
+    "email": "han@ggmail.com",
+    "phone": "23753456",
+    "eventTickets": []
+  },
+  {
+    "id": "4",
+    "username": "lucy",
+    "password": "lucy123",
+    "email": "lucy@ggmail.com",
+    "phone": "298358475",
+    "eventTickets": []
+  },
+  {
+    "id": "5",
+    "username": "Mary",
+    "password": "mary123",
+    "email": "mary@ggmail.com",
+    "phone": "23897534",
+    "eventTickets": []
+  },
+  {
+    "id": "6",
+    "username": "tom",
+    "password": "tom123",
+    "email": "tom@ggmail.com",
+    "phone": "3287545634",
+    "eventTickets": []
+  },
+  {
+    "id": "7",
+    "username": "Laila",
+    "password": "laila123",
+    "email": "laila@ggmail.com",
+    "phone": "3298573945",
+    "eventTickets": []
+  },
+  {
+    "id": "8",
+    "username": "david",
+    "password": "david123",
+    "email": "david@gmail.com",
+    "phone": "32953485",
     "eventTickets": []
   }
 ]

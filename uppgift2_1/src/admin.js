@@ -6,21 +6,6 @@ export default class Admin {
     this.password = password;
   }
 
-  viewPurchasedUsers(eventTickets) {
-    console.log('\nUsers who purchased tickets:\n');
-
-    eventTickets.forEach((eventTicket) => {
-      if (eventTicket.buyerId) {
-        const user = users.find(user => user.id === eventTicket.buyerId);
-        console.log(`Event: ${eventTicket.eventName}, User: ${user.username}`);
-      }
-    });
-
-    if (!eventTickets.some(eventTicket => eventTicket.buyerId)) {
-      console.log('No users have purchased tickets yet.');
-    }
-  }
-
   static fromJSON(json) {
     return new Admin(json.username, json.password);
   }
@@ -31,5 +16,16 @@ export default class Admin {
       password: this.password,
     };
   }
-}
 
+  viewPurchasedUsers(eventTickets) {
+    console.log('\nUsers who purchased tickets:');
+
+    // Iterate over eventTickets and find users who purchased tickets
+    eventTickets.forEach(event => {
+      const user = users.find(user => user.id === event.buyerId);
+      if (user) {
+        console.log(`${user.username} - ${event.name}`);
+      }
+    });
+  }
+}
